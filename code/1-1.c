@@ -5,7 +5,7 @@ int main(int argc, const char* argv[]) {
     if (argc < 2)
         return 0;
 
-    const char* filname = argv[1];
+    const char* filename = argv[1];
     char buffer[256] = {0};
 
     FILE* fp = fopen(filename, "r");
