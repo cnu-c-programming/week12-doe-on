@@ -13,16 +13,17 @@ int main(int argc, const char* argv[]) {
     
     while (!feof(fp)) {
 
-        fscanf(fp, "%s %d",
-               students[count].name,
-               &students[count].score);
+    fscanf(fp, "%s %d",
+           students[count].name,
+           &students[count].score);
 
-        count++;
-    }
+    count++;
+}
 
     int max = 0;
     float avg = 0;
 
+    int sum = 0;
     for (int i = 0; i < count; i++) {
 
         sum += students[i].score;
