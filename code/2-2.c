@@ -11,7 +11,9 @@ int main(int argc, const char* argv[]) {
     int count = 0;
     Student students[64];
     
-    while (fscanf(fp, "%s %d",
+    while (!feof(fp)) {
+
+    fscanf(fp, "%s %d",
            students[count].name,
            &students[count].score);
 
@@ -20,8 +22,8 @@ int main(int argc, const char* argv[]) {
 
     int max = 0;
     float avg = 0;
-
     int sum = 0;
+    
     for (int i = 0; i < count; i++) {
 
         sum += students[i].score;
