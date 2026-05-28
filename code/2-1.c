@@ -10,7 +10,7 @@ int main(int argc, const char* argv[], const char* envp[]) {
         sccanf("%s", name);
         if (strcmp(name, "quit") == 0)
             break;
-        scnaf("%d", &score);
+        scanf("%d", &score);
 
         fprintf(fp, "%s %d\n", name, score);
     }
