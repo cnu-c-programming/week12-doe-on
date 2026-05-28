@@ -17,7 +17,8 @@ int main(int argc, const char* argv[]) {
            students[count].name,
            &students[count].score);
 
-    count++;
+    if (!feof(fp))
+        count++;
 }
 
     int max = 0;
