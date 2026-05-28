@@ -11,7 +11,7 @@ void cat(const char* filename) {
 
     fclose(fp);
 }
-int main(int argc, const char8 argv[]) {
+int main(int argc, const char* argv[]) {
     if (argc < 2)
         return 0;
 
