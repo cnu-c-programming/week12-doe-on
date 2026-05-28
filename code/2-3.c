@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void logger(char* messsage) {
+void logger(char* message) {
   FILE* fp = fopen("log.txt", "a");
   fprintf(fp, "%s\n", message);
 }
