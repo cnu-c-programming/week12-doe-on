@@ -11,6 +11,7 @@ int main(int argc, const char* argv[]) {
     FILE* fp = fopen(filename, "r");=
     if (fp == NULL)
         return 0;
+    
     fscanf(fp, "%9s", buffer);
     fclose(fp);
 
